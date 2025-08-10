@@ -1,4 +1,4 @@
-/* YOUR NAME GOES HERE */
+/* Timothy Adams */
 
 /* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
 
@@ -31,9 +31,12 @@
 
 /* ----- CHECK FOR USER DARK MODE PREFERENCE ----- */
 /* --------------- BEGIN USER PREFERS DARK COLOR SCHEME QUERY --------------- */
-
+@media (prefers-color-scheme: dark) {
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
-
+    body {
+        background-color: var(--dark-gray);
+    }
+}
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
 
 

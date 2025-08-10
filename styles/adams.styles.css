@@ -141,12 +141,15 @@ footer .icon{
 
 /* ----- HANDLE PREFERS REDUCED MOTION FOR THE ICON ANIMATIONS ----- */
 /* --------------- BEGIN USER PREFERS REDUCED MOTION QUERY --------------- */
+@media (prefers-reduced-motion: reduce) {
+
     @-webkit-keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
     @keyframes icon-animation {
         0% { font-variation-settings: "TIME" 1; }
     }
+}
 /* --------------- END USER PREFERS REDUCED MOTION QUERY --------------- */
 
 
@@ -200,7 +203,8 @@ img{
 
 /* ---------- SMALL SCREEN STYLES ---------- */
 /* --------------- BEGIN SMALL SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width: 320px) {
+    header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
     }
@@ -225,14 +229,16 @@ img{
     img{
         width: 200px;
         max-width: 200px;
-    } */
+    }
+}
 /* --------------- END SMALL SCREEN SIZES --------------- */
 
 
 
 /* ---------- MEDIUM SCREEN STYLES ---------- */
 /* --------------- BEGIN MEDIUM SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width: 550px) {
+    header, footer{
         background-color: var(--black);
         color: var(--white);
     }   
@@ -257,14 +263,16 @@ img{
     #seven{
         grid-column: 3/4;
         grid-row: 3/5;
-    } */
+    }
+}
 /* --------------- END MEDIUM SCREEN SIZES --------------- */
 
 
 
 /* ---------- LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN LARGE SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width: 768px) {
+    header, footer{
         background-color: var(--lime-green);
         color: var(--dark-gray);
     }
@@ -295,7 +303,8 @@ img{
 
     #seven, #eight{
         grid-row: 3/4;
-    } */
+    }
+}
 /* --------------- END LARGE SCREEN SIZES --------------- */
 
 
@@ -312,7 +321,8 @@ img{
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-    /* header, footer{
+@media screen and (min-width: 960px) {
+    header, footer{
         background-color: var(--orange);
         padding-left: 5%;
     }
@@ -377,5 +387,6 @@ img{
 
     #three p, #four p, #five p, #six p{
         padding-top: 2em;
-    } */
+    }
+}
 /* --------------- END EXTRA LARGE SCREEN SIZES --------------- */
